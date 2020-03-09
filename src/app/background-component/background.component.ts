@@ -11,7 +11,7 @@ export class BackgroundComponent implements OnInit,AfterViewInit{
      ctx : CanvasRenderingContext2D;
     protected box : number;
     ngAfterViewInit(){
-        this.box = 32;
+        this.box = 16;
         this.ctx = this.canvasRef.nativeElement.getContext('2d');
         this.canvasRef.nativeElement.height = window.innerHeight;
         this.canvasRef.nativeElement.width = window.innerWidth;
